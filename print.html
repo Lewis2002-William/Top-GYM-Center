@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>门店扫码牌</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="print-shell">
+      <section class="print-card">
+        <div class="brand print-brand">
+          <div class="brand-mark">Fit</div>
+          <div>
+            <div class="brand-title" data-config="gymName">燃点健身房</div>
+            <div class="brand-subtitle">扫码连接 WiFi，进入评论中心</div>
+          </div>
+        </div>
+
+        <div class="print-qr" id="entryQr" aria-label="扫码进入门店入口"></div>
+
+        <h1 class="print-title">扫码进入门店入口</h1>
+        <p class="print-copy">页面内有 WiFi 名称和密码，连接后点击按钮进入评论中心。</p>
+        <p class="print-warning" id="fileWarning">
+          当前是本地文件预览，请部署到 GitHub Pages 后再打印二维码。
+        </p>
+        <div class="print-url" id="entryUrl"></div>
+      </section>
+    </main>
+    <script src="vendor/qrcode.js"></script>
+    <script src="config.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

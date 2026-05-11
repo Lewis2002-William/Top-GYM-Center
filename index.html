@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>门店评论中心</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">Fit</div>
+          <div>
+            <div class="brand-title" data-config="gymName">燃点健身房</div>
+            <div class="brand-subtitle">WiFi & 评论中心</div>
+          </div>
+        </div>
+        <a class="nav-link" href="print.html">扫码牌</a>
+      </header>
+
+      <section class="hero">
+        <div class="hero-main">
+          <span class="eyebrow">到店顾客专用</span>
+          <h1 data-config="gymName">燃点健身房</h1>
+          <p class="lead">
+            扫码后先连接门店 WiFi，再进入评论中心。评论草稿每 6 小时换一批，可按训练体验标签筛选，复制后请按自己的真实体验修改。
+          </p>
+        </div>
+
+        <aside class="wifi-panel" aria-label="WiFi 信息">
+          <div class="qr-box" id="wifiQr" aria-label="WiFi 连接二维码"></div>
+          <div class="field-list">
+            <div class="field">
+              <label>WiFi</label>
+              <code data-config="wifiSsid">GYM-GUEST</code>
+              <button class="btn secondary js-copy" data-copy-config="wifiSsid">复制</button>
+            </div>
+            <div class="field">
+              <label>密码</label>
+              <code data-config="wifiPassword">Move2026</code>
+              <button class="btn secondary js-copy" data-copy-config="wifiPassword">复制</button>
+            </div>
+          </div>
+          <div class="button-row">
+            <a class="btn teal" href="#commentCenter">进入评论中心</a>
+          </div>
+          <p class="tiny-note">评论中心完全运行在当前网页中，不需要本地服务器。</p>
+        </aside>
+      </section>
+
+      <section class="comment-section" id="commentCenter">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">评论中心</span>
+            <h2>选择今天的训练体验</h2>
+            <p>
+              当前页面会从静态评论库里按标签筛选，并按 6 小时批次随机展示几条。复制后仅在本手机隐藏。
+            </p>
+          </div>
+          <div class="button-row">
+            <button class="btn secondary" id="shuffleButton" type="button">换一组</button>
+            <button class="btn secondary" id="resetCopiedButton" type="button">恢复已复制</button>
+          </div>
+        </div>
+
+        <div class="meta-strip">
+          <span id="rotationInfo">正在读取评论库</span>
+          <span id="poolInfo"></span>
+        </div>
+
+        <div class="tag-grid" id="tagGrid"></div>
+        <p class="notice" id="notice"></p>
+        <div class="comment-grid" id="commentGrid"></div>
+        <div class="empty-state" id="emptyState">当前标签暂无可用草稿，请换一个标签或点击换一组。</div>
+      </section>
+    </main>
+    <script src="vendor/qrcode.js"></script>
+    <script src="config.js"></script>
+    <script src="comments.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>
