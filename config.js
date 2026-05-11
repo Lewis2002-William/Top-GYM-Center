@@ -1,5 +1,5 @@
 window.PAGE_CONFIG = {
-  gymName: "燃点健身房",
+  gymName: "顶尖健身房",
   wifiSsid: "GYM-GUEST",
   wifiPassword: "Move2026",
   entryUrl: "",
