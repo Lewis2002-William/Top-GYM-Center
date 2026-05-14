@@ -64,6 +64,10 @@ function boot() {
 }
 
 function renderQr(container, value) {
+  if (typeof qrcode !== "function") {
+    container.innerHTML = '<p class="qr-fallback">二维码库未加载，请检查 qrcode.js 是否已上传。</p>';
+    return;
+  }
   const qr = qrcode(0, "M");
   qr.addData(value);
   qr.make();
@@ -129,11 +133,11 @@ function renderComments() {
   const selected = seededShuffle(filtered, seed).slice(0, perView);
   const nextRefresh = new Date((bucket + 1) * rotationHours * 60 * 60 * 1000);
 
-  rotationInfo.textContent = `${rotationHours} 小时批次：${timeSlotLabel(currentSlot)}，下次换批 ${formatTime(nextRefresh)}`;
-  poolInfo.textContent = `评论库 ${allComments.length} 条，可选 ${filtered.length} 条`;
+  rotationInfo.textContent = `当前推荐：${timeSlotLabel(currentSlot)}体验`;
+  poolInfo.textContent = `${formatTime(nextRefresh)} 左右自动换新`;
   notice.classList.remove("show");
   if (copiedIds.size > 0) {
-    notice.textContent = `本手机已复制 ${copiedIds.size} 条，已自动隐藏。`;
+    notice.textContent = `已复制的草稿已为你临时收起，避免重复选择。`;
     notice.classList.add("show");
   }
 
@@ -154,7 +158,7 @@ function renderComments() {
     card.querySelector(".copy-comment").addEventListener("click", async () => {
       await copyText(comment.text);
       markCopied(comment.id);
-      notice.textContent = "已复制。发布前请按自己的真实训练体验修改。";
+      notice.textContent = "已复制。发布前可以按自己的真实训练体验再调整一下。";
       notice.classList.add("show");
       renderComments();
     });
