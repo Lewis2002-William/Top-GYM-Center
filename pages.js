@@ -158,12 +158,20 @@ function renderComments() {
     card.querySelector(".copy-comment").addEventListener("click", async () => {
       await copyText(comment.text);
       markCopied(comment.id);
-      notice.textContent = "已复制。发布前可以按自己的真实训练体验再调整一下。";
+      notice.textContent = "已复制。即将打开抖音门店页，发布前可以再调整一下。";
       notice.classList.add("show");
       renderComments();
+      window.setTimeout(openDouyinPoi, 350);
     });
     commentGrid.appendChild(card);
   });
+}
+
+function openDouyinPoi() {
+  if (!config.douyinPoiUrl) {
+    return;
+  }
+  window.location.href = config.douyinPoiUrl;
 }
 
 function matchesTags(comment, selectedTags) {
