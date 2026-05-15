@@ -167,8 +167,37 @@ function renderComments() {
   });
 }
 
+function isWeChat() {
+  return /MicroMessenger/i.test(navigator.userAgent);
+}
+
+function showWeChatOverlay() {
+  if (document.querySelector("#wechat-guide-overlay")) {
+    return;
+  }
+  const overlay = document.createElement("div");
+  overlay.id = "wechat-guide-overlay";
+  overlay.style.cssText =
+    "position:fixed;inset:0;background:rgba(0,0,0,0.78);z-index:9999;display:flex;flex-direction:column;align-items:flex-end;padding:12px 16px 0;";
+  overlay.innerHTML = `
+    <div style="text-align:right;color:#fff;font-size:15px;line-height:1.8;margin-bottom:8px;">
+      <div style="font-size:32px;margin-bottom:4px;">↗</div>
+      <div>点右上角 <strong>「···」</strong></div>
+      <div>选择 <strong>「在浏览器打开」</strong></div>
+      <div style="font-size:13px;margin-top:8px;opacity:.75;">然后即可自动跳转抖音门店页面</div>
+    </div>
+    <button id="wechat-guide-close" style="margin-top:auto;margin-bottom:40px;background:#fff;color:#333;border:none;border-radius:8px;padding:10px 28px;font-size:15px;cursor:pointer;">知道了</button>
+  `;
+  document.body.appendChild(overlay);
+  document.querySelector("#wechat-guide-close").addEventListener("click", () => overlay.remove());
+}
+
 function openDouyinPoi() {
   if (!config.douyinPoiUrl) {
+    return;
+  }
+  if (isWeChat()) {
+    showWeChatOverlay();
     return;
   }
   window.location.href = config.douyinPoiUrl;
