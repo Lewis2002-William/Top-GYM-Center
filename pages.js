@@ -1,7 +1,6 @@
 const config = window.PAGE_CONFIG || {};
 const tagDefinitions = [
   { id: "private_training", label: "私教" },
-  { id: "group_class", label: "团课" },
   { id: "equipment", label: "器械" },
   { id: "environment", label: "环境" },
   { id: "atmosphere", label: "氛围" },
