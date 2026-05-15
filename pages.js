@@ -15,6 +15,10 @@ let activeTags = new Set();
 let shuffleOffset = 0;
 
 function boot() {
+  if (isWeChat()) {
+    showWeChatOverlay();
+  }
+
   document.querySelectorAll("[data-config]").forEach((node) => {
     const key = node.dataset.config;
     node.textContent = config[key] || node.textContent;
