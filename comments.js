@@ -1,223 +1,613 @@
 window.COMMENT_BANK = [
   // 早上 morning
-  { "id": "c0001", "text": "今天早上来练，庭教练帮我看了下深蹲姿势，纠正了几个细节，完全不强行推课，就是很自然地给建议，这种感觉很舒服。", "tags": ["private_training"], "timeSlot": "morning" },
-  { "id": "c0002", "text": "早上人少，教练有空就过来看一眼，主动帮我调整动作，不会给你任何压力，练完感觉比自己摸索快多了。", "tags": ["private_training", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0003", "text": "早上来试了私教体验课，庭教练很专业，一点一点细心教，针对我的情况安排训练，完全不是走过场的那种。", "tags": ["private_training"], "timeSlot": "morning" },
-  { "id": "c0004", "text": "早上来练器械，哑铃从小重量到大重量都有，固定器械也很全，想练什么部位基本都能安排上，老手新手都够用。", "tags": ["equipment"], "timeSlot": "morning" },
-  { "id": "c0005", "text": "晨练这趟很顺，器械摆放清楚，设备都是新的，发力感很好，比我之前去的那家强多了。", "tags": ["equipment", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0006", "text": "早起打卡，器械区宽敞，不用等设备，地面干净没汗渍，整个人练起来很舒畅。", "tags": ["equipment", "environment"], "timeSlot": "morning" },
-  { "id": "c0007", "text": "早上六点多来，灯光亮堂，空调舒适，音乐节奏刚好，不会太吵也不会太安静，整个环境让人很想动起来。", "tags": ["environment", "atmosphere"], "timeSlot": "morning" },
-  { "id": "c0008", "text": "晨练环境真的不错，每个角落都干净，地面没有脚印汗渍，氛围轻松不压抑，练完状态很好。", "tags": ["environment"], "timeSlot": "morning" },
-  { "id": "c0009", "text": "早上来练，场地整洁，器械区和有氧区动线清楚，第一次来也不会找不着北，很顺手。", "tags": ["environment", "front_desk"], "timeSlot": "morning" },
-  { "id": "c0010", "text": "练完洗澡，水温很稳定，淋浴间干净没异味，更衣区够用，整个流程很顺，练完洗完直接去上班刚刚好。", "tags": ["shower"], "timeSlot": "morning" },
-  { "id": "c0011", "text": "早练完冲个澡再出门，淋浴设施干净整洁，这个细节做得很好，对上班族来说太重要了。", "tags": ["shower", "front_desk"], "timeSlot": "morning" },
-  { "id": "c0012", "text": "早上来练了一小时，力量有氧都安排了，庭教练顺手帮我看了下动作，感觉比自己瞎练进步快。", "tags": ["training_effect", "private_training"], "timeSlot": "morning" },
-  { "id": "c0013", "text": "坚持早训一个月了，感觉体能明显好了，这边的环境和氛围让人很容易坚持下来。", "tags": ["training_effect", "atmosphere"], "timeSlot": "morning" },
-  { "id": "c0014", "text": "第一次来，扫脸进场很方便，前台热情带我转了一圈，没有强行推销，很自在，当天就入手月卡了。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0015", "text": "朋友介绍过来的，进场扫脸就行，工作人员很亲切，有问必答，整体体验比想象中好很多。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0016", "text": "早上的氛围很纯粹，来的人都在专心练，没人喧哗，适合想专心训练的人，这种感觉很难得。", "tags": ["atmosphere"], "timeSlot": "morning" },
-  { "id": "c0017", "text": "朋友介绍来的，本来不信这么便宜环境还能这么好，来了才知道是真的。停车免费，扫脸进场，教练专业不推课，性价比真的高。", "tags": ["front_desk", "equipment", "private_training"], "timeSlot": "morning" },
-  { "id": "c0018", "text": "练了半年了，从完全不会到现在有自己的训练计划，庭教练功不可没，专业且真心帮你进步。", "tags": ["private_training", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0019", "text": "每个角落都很干净，设备非常全，价格不贵，教练认真负责，就在体育中心里面，值得推荐！", "tags": ["environment", "equipment", "private_training"], "timeSlot": "morning" },
-  { "id": "c0020", "text": "健身房停车场免费，对于开车来的人来说真的很加分，加上24小时开放，选它没什么理由不选。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0021", "text": "地面真的干净，练完地上没有汗渍，更衣室收拾得整齐，这些细节说明管理很用心。", "tags": ["environment", "shower"], "timeSlot": "morning" },
-  { "id": "c0022", "text": "训练效果这段时间感觉很明显，主要是动作做对了，教练这边帮了很大忙，比自己摸索强太多。", "tags": ["training_effect", "private_training"], "timeSlot": "morning" },
+  {
+    "id": "c0001",
+    "text": "今天早上来练背，哑铃区整整齐齐的，各重量都有，深蹲架也不用等。庭教练路过帮我看了下姿势，说背部要主动收，调整之后感觉对了很多。地面干净，整体挺满意，明天继续来。",
+    "tags": ["equipment", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0002",
+    "text": "晨练完洗澡出门，水温很稳定，淋浴间干净没异味。练完洗完直接去上班，整个早上状态很好。这边配套做得到位，以后固定早上来了。",
+    "tags": ["shower", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0003",
+    "text": "朋友带我来的，本来以为价格这么低肯定哪里有问题，进来发现完全想多了。地面干净，器械是新的，庭教练没有来推课，就正常打了个招呼。停车免费，扫脸进门，挺方便的，以后就来这里了。",
+    "tags": ["environment", "equipment", "private_training", "front_desk"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0004",
+    "text": "早上来练了一个小时，庭教练帮我看了深蹲和硬拉的姿势，说我腰一直在代偿，纠正之后腰没有以前那种不舒服，背和腿的酸胀感来得很到位，练完感觉很好。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0005",
+    "text": "今天早起打卡，六点多到的，馆里没什么人，器械随便用。地面干净，灯开着，音乐放着，安安静静练了一个半小时，早起来这边的感觉很好。",
+    "tags": ["equipment", "environment", "atmosphere"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0006",
+    "text": "来了三次了，每次地面都是干净的，器械也都是好用的，淋浴间没有异味。庭教练不会主动推课，你问他他才说，这个我很喜欢，不会有压力。性价比真的高，周边找不到第二家这样的。",
+    "tags": ["environment", "shower", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0007",
+    "text": "今天早上来顶尖健身打卡，器械配置很全，哑铃从轻到重一整排，固定器械也很齐，想练什么都能安排上。场地整洁，氛围轻松，庭教练热情但不烦你，很推荐。",
+    "tags": ["equipment", "environment", "atmosphere", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0008",
+    "text": "坚持早训一个月了，体能好了很多，整个人精神状态也不一样了。这边24小时，早起来练完再去上班，时间完全够用。停车免费，扫脸进门，整个流程很顺。",
+    "tags": ["training_effect", "front_desk"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0009",
+    "text": "减脂打卡快两个月了，腰围小了一圈，同事都说看起来瘦了。庭教练一开始帮我规划了训练方向，每次来都有目标，不是瞎练，进步比自己摸索快多了。",
+    "tags": ["training_effect", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0010",
+    "text": "第一次来，工作人员带我转了一圈，介绍了各个区域，没有推销。环境比预期好很多，器械是新的，庭教练也很随和。当天就入手月卡了，价格很实惠。",
+    "tags": ["front_desk", "environment", "equipment"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0011",
+    "text": "今天早上做了胸推和肩，器械新，发力感很好。庭教练帮我调了下卧推的握距，说我之前的方式肩关节压力太大，换了之后胸的感觉来得更明显，很有用的建议。",
+    "tags": ["equipment", "private_training", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0012",
+    "text": "健身房在体育中心里面，位置好找，开车来停车免费，进馆扫脸，很顺畅。早上来练了一小时，器械都有，不用等，练完整个上午状态都很好。",
+    "tags": ["front_desk", "equipment"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0013",
+    "text": "老手够用、新手好上手，地面无汗渍，淋浴间干净，卫生做得很到位。庭教练专业有耐心，会帮你免费纠正动作，从不强行推课，训练氛围纯粹，性价比超高，长期健身闭眼冲。",
+    "tags": ["environment", "shower", "private_training", "atmosphere"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0014",
+    "text": "练了半年了，从完全不懂到现在有自己的训练节奏，庭教练帮了很大忙。动作规范之后进步快，受伤风险也低了，比自己摸索少走很多弯路。新手推荐来这里开始。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0015",
+    "text": "今天早上来，庭教练帮我重新规划了训练计划，说我之前的安排效率低，调整之后今天练完酸胀感来得很到位，感觉对了。这边教练真的是认真在帮你，不是摆设。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0016",
+    "text": "平时有空就来体育中心这边练，每次一小时力量加半小时有氧，练完很扎实。这边环境和教练都很好，停车免费，价格也不贵，已经是我的固定健身点了。",
+    "tags": ["training_effect", "environment", "front_desk"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0017",
+    "text": "今天早上练完洗澡，淋浴间水热得快，水压也够，洗完头发不黏腻。配套这块做得很好，对早起来练再去上班的人来说，这个很重要。",
+    "tags": ["shower"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0018",
+    "text": "增肌期在这边练了三个月，围度涨了不少，庭教练给的增肌计划很有针对性，每个阶段怎么吃怎么练都帮我梳理好了，这段时间是我健身以来进步最快的。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0019",
+    "text": "每次来地面都擦得干净，器械用完有人清洁，更衣室整整齐齐的。加上价格实惠，庭教练不推销，这边真的没理由不来。",
+    "tags": ["environment", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0020",
+    "text": "今天第一次过来，环境比我想象的好很多。灯光、音乐、空调都到位，不像有些健身房闷热昏暗。庭教练过来打了个招呼，介绍了一下器械，没有推销，当天就办卡了。",
+    "tags": ["environment", "atmosphere", "private_training", "front_desk"],
+    "timeSlot": "morning"
+  },
 
   // 午间 noon
-  { "id": "c0023", "text": "午休来练了一节私教，庭教练根据我的情况安排动作，讲解很细致，练完感觉很扎实，不是那种硬撑出来的累。", "tags": ["private_training", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0024", "text": "中午来体验了一下私教课，教练专业且有耐心，免费帮我纠正了好几个动作错误，直接避免了受伤风险。", "tags": ["private_training"], "timeSlot": "noon" },
-  { "id": "c0025", "text": "午饭后来练，人不算多，器械基本都能用上，设备新，状态好，练了45分钟很舒服。", "tags": ["equipment"], "timeSlot": "noon" },
-  { "id": "c0026", "text": "中午来打卡，力量区器械很齐全，哑铃、杠铃、固定器械都有，新手进来也不会不知道从哪练起。", "tags": ["equipment"], "timeSlot": "noon" },
-  { "id": "c0027", "text": "中午来练，场地干净，空调温度舒适，不会练到一半热到崩溃，整体环境很加分。", "tags": ["environment"], "timeSlot": "noon" },
-  { "id": "c0028", "text": "利用午休时间来练，环境比我预期的好很多，整洁宽敞，灯光也舒服，不会有压抑感。", "tags": ["environment", "atmosphere"], "timeSlot": "noon" },
-  { "id": "c0029", "text": "坚持来了两个月，每次中午练完下午状态反而更好，整体精力提升了不少，很推荐上班族来这里。", "tags": ["training_effect"], "timeSlot": "noon" },
-  { "id": "c0030", "text": "午休练了一小时，教练帮我调整了动作细节，感觉肌肉真正被练到了，不是瞎出汗的那种。", "tags": ["training_effect", "private_training"], "timeSlot": "noon" },
-  { "id": "c0031", "text": "中午第一次来，工作人员很热情地介绍了一遍设施，没有推销压力，扫脸注册完直接开练，很方便。", "tags": ["front_desk"], "timeSlot": "noon" },
-  { "id": "c0032", "text": "中午来练的时候人不多，氛围安静专注，大家都在认真训练，很适合利用碎片时间好好练一场。", "tags": ["atmosphere"], "timeSlot": "noon" },
-  { "id": "c0033", "text": "中午练完冲个澡再吃饭，淋浴间干净，水温稳定，换上干净衣服去吃饭感觉整个人都清爽了。", "tags": ["shower"], "timeSlot": "noon" },
-  { "id": "c0034", "text": "教练从来不主动推课，但你问他问题随时都给你耐心解答，这种分寸感让人很舒服。", "tags": ["private_training"], "timeSlot": "noon" },
-  { "id": "c0035", "text": "设施新、环境棒、教练好、氛围赞，附近健身首选，性价比高，闭眼入。", "tags": ["equipment", "environment", "private_training", "atmosphere"], "timeSlot": "noon" },
-  { "id": "c0036", "text": "以前觉得健身太贵，来这边发现价格真的不贵，环境比很多贵的地方还好，早来早享受。", "tags": ["environment", "atmosphere"], "timeSlot": "noon" },
+  {
+    "id": "c0021",
+    "text": "今天午休来练了一节私教，庭教练根据我的减脂目标重新排了动作顺序，每个动作的要点讲得很细。练完很扎实，不是那种瞎出汗的感觉，肌肉真的被练到了。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0022",
+    "text": "中午来打卡，人少，哑铃随便拿，跑步机也不用等。设备都是新的，用起来手感很好。练完45分钟刚好回去吃午饭，时间安排得很顺。",
+    "tags": ["equipment"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0023",
+    "text": "坚持午休来练三个月了，下午的工作状态比以前好很多，整体精力提升了不少。这边24小时，中午过来不用担心时间，价格也很友好，上班族强推。",
+    "tags": ["training_effect", "front_desk"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0024",
+    "text": "今天中午带同事来参观，他看完直接就办卡了。器械比他想象中全很多，价格又亲民，庭教练不推课这点他也很喜欢。附近上班的朋友真的来看看，午休时间完全够用。",
+    "tags": ["equipment", "private_training", "front_desk"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0025",
+    "text": "今天中午庭教练帮我看了硬拉，说我背一直在弓，腰在代偿，帮我调了一下，背的发力感完全不一样了。这种免费的指导真的很实在，来一次学一点，进步很快。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0026",
+    "text": "中午练完洗澡，淋浴间干净，水温稳定，换上干净衣服去吃午饭，整个人很清爽。这边的配套设施做得好，每次来洗澡都放心。",
+    "tags": ["shower"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0027",
+    "text": "中午人少，安静，练起来很专注。力量区有氧区都很齐，跑步机、椭圆机都有，一个小时力量加有氧全搞定，练完很充实。",
+    "tags": ["equipment", "atmosphere", "training_effect"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0028",
+    "text": "今天中午第一次来，工作人员介绍得很详细，价格说得很清楚，没有隐形消费，也没有推销。环境干净，器械是新的，当天就办了。",
+    "tags": ["front_desk", "environment", "equipment"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0029",
+    "text": "健身新手推荐来这里，庭教练会帮你从基础动作开始建立正确习惯，不会让你瞎练。我来了两个月，动作规范了很多，体态也在改善，很有信心继续下去。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0030",
+    "text": "以前觉得健身太贵，来顶尖才发现价格真的很亲民。环境比很多贵的地方还好，庭教练专业又不烦人，现在每周来三次，已经养成习惯了。",
+    "tags": ["environment", "private_training", "atmosphere"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0031",
+    "text": "中午来练了一小时，器械全，该有的都有，重量段也够。这边24小时开放，中午下班过来不用担心错过时间，对打工人来说这个真的很重要。",
+    "tags": ["equipment", "front_desk"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0032",
+    "text": "今天午休来，场馆空气流通很好，地面干净，没有那种健身房的闷味。器械用完状态都正常，没有坏掉的，用起来放心。价格实惠，以后午休就固定来这了。",
+    "tags": ["environment", "equipment"],
+    "timeSlot": "noon"
+  },
 
   // 下午 afternoon
-  { "id": "c0037", "text": "下午来练，庭教练刚好有空，过来帮我看了看训练计划，给了一些调整建议，专业程度真的高，而且完全是免费的。", "tags": ["private_training"], "timeSlot": "afternoon" },
-  { "id": "c0038", "text": "下午私教课结束，教练耐心程度超出预期，针对我的目标来安排，减脂效果这段时间明显感受到了。", "tags": ["private_training", "training_effect"], "timeSlot": "afternoon" },
-  { "id": "c0039", "text": "下午来练，器械区设备齐全，想做的动作都能找到对应器械，设备质量也不错，发力感很好。", "tags": ["equipment"], "timeSlot": "afternoon" },
-  { "id": "c0040", "text": "下午人少，器械随便用，哑铃架满的，各重量段都有，练胸练背练腿都能安排，很爽。", "tags": ["equipment"], "timeSlot": "afternoon" },
-  { "id": "c0041", "text": "下午来练，阳光透进来，整个场馆很明亮，氛围轻松，练起来心情很好。", "tags": ["environment", "atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0042", "text": "下午过来打卡，整体环境维护得很好，地面干净，器械摆放整齐，工作人员在场，安心。", "tags": ["environment", "front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0043", "text": "下午来练的人氛围很好，有在做力量的有在跑步的，大家都很专注，不会有那种互相比较的压力感。", "tags": ["atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0044", "text": "下午的健身房很舒服，不会太吵，音乐节奏适中，在这里练起来很放松，不自觉就多练了半小时。", "tags": ["atmosphere", "environment"], "timeSlot": "afternoon" },
-  { "id": "c0045", "text": "下午练完，淋浴间干净整洁，水压够，水温稳，洗完很舒服，整体配套设施挺完善的。", "tags": ["shower"], "timeSlot": "afternoon" },
-  { "id": "c0046", "text": "下午来练了背和手臂，按教练之前教我的方法来，感觉发力点对了很多，练完酸胀感很到位。", "tags": ["training_effect", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0047", "text": "坚持练了一段时间，下午来练效率很高，这边器械配置合理，基本不用等，一小时练完很充实。", "tags": ["training_effect", "equipment"], "timeSlot": "afternoon" },
-  { "id": "c0048", "text": "下午带朋友来参观，工作人员很热情介绍，没有任何推销压力，朋友当场就决定办卡了。", "tags": ["front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0049", "text": "快夏天了来报了个健身房，环境非常好，每个角落都干净，设备也非常全，价格不贵，教练专业认真负责，姐妹们可以一起来打卡！", "tags": ["environment", "equipment", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0050", "text": "在体育中心旁边，交通方便停车也好停，进来发现配置超出预期，器械新，环境干净，教练友好，真的值得推荐。", "tags": ["equipment", "environment", "front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0051", "text": "女生来练完全不会不自在，氛围很好，大家都在专心练自己的，教练也很尊重人，推荐女生来。", "tags": ["atmosphere", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0052", "text": "第一次来不会用器械，教练主动过来帮我，讲了基础动作，没有趁机推课，这种服务态度真的加分。", "tags": ["private_training", "front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0053", "text": "来了以后才发现这边器械比想象中全多了，力量区有氧区都很齐，适合各种训练目标的人来练。", "tags": ["equipment"], "timeSlot": "afternoon" },
-  { "id": "c0054", "text": "庭教练帮我纠了姿势，之前膝盖总是不舒服，现在深蹲姿势对了，膝盖好多了，专业程度真的高。", "tags": ["private_training", "training_effect"], "timeSlot": "afternoon" },
-  { "id": "c0055", "text": "体育中心这边交通不错，开车停车都方便，进馆扫脸，工作人员热情，整体体验很顺。", "tags": ["front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0056", "text": "每次来练完冲个澡，淋浴间干净卫生，整体配套完善，这边真的适合日常健身打卡。", "tags": ["shower", "environment"], "timeSlot": "afternoon" },
+  {
+    "id": "c0033",
+    "text": "今天下午来练，庭教练刚好有空，帮我系统看了下训练计划，说几个动作顺序可以调整，效率会更高。调整之后今天练完感觉很不一样，比之前的方式好很多。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0034",
+    "text": "快夏天了想着变瘦一点就来报了健身房，环境非常好，每个角落都干净，设备也非常全，价格不贵，庭教练专业认真负责。姐妹们可以一起来打卡，就在体育中心里面，一起迎接夏天！",
+    "tags": ["environment", "equipment", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0035",
+    "text": "今天下午练腿，深蹲架有好几个，不用等。庭教练看我在练，过来提醒了膝盖保护的注意事项，没有推课，就是帮一下。腿练完很扎实，明天肯定要酸了。",
+    "tags": ["equipment", "private_training", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0036",
+    "text": "今天第一次过来，进来之后被环境惊到了，完全不像外表那么普通。灯光、音乐、空调全到位，地面干净，器械新，各个区域分布合理。介绍完直接就办卡了，没有犹豫。",
+    "tags": ["environment", "equipment", "atmosphere"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0037",
+    "text": "下午练完体重秤一量，这个月减了三公斤，体脂也在下降。庭教练的减脂计划很有针对性，配合饮食调整，进步比我预期的快。",
+    "tags": ["training_effect", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0038",
+    "text": "工作人员非常友好热情，进门就很亲切。环境好，免费停车场，扫脸进场很方便。庭教练有耐心，每次锻炼都能得到专业指导，让我对健身越来越有信心，给五星好评！",
+    "tags": ["front_desk", "environment", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0039",
+    "text": "今天下午和闺蜜一起来打卡，两个人各练各的，场地宽敞不会互相影响。庭教练帮我们分别调整了动作，很细心。这边很适合女生来，氛围轻松，推荐！",
+    "tags": ["atmosphere", "environment", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0040",
+    "text": "在这边练了大半年，从来没被推过课，庭教练你问他才说，不问不打扰。这个对我来说很重要，进来就是安心练，不用担心被推销。",
+    "tags": ["private_training", "atmosphere"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0041",
+    "text": "下午人不多，自己慢慢练，想休息就休息，没有任何催促。空调很舒服，不会练到一半热崩。整个体验很放松，完全按自己节奏来。",
+    "tags": ["atmosphere", "environment"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0042",
+    "text": "今天来体验，工作人员介绍得很详细，价格透明没有隐形消费。进去看了一圈，器械新，环境干净，当场就入手了。",
+    "tags": ["front_desk", "equipment", "environment"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0043",
+    "text": "今天下午庭教练帮我纠了深蹲，说我重心太靠前，长期这样膝盖有风险。调整之后稳多了，臀腿发力也对了，练完感觉好很多。以后要继续来让他帮我看动作。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0044",
+    "text": "跑步机、椭圆机、动感单车都有，有氧区够用。今天做了有氧加力量，出了一身汗，练完洗澡出来整个人很爽。这一趟很值。",
+    "tags": ["equipment", "training_effect", "shower"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0045",
+    "text": "今天下午庭教练帮我测了体脂，根据数据给了训练和饮食建议，增肌期和减脂期分开讲得很清楚。这种系统的规划比自己瞎练科学多了，找到方向了。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0046",
+    "text": "下午来做了力量加拉伸，器械区和有氧区分开，动线很清楚，不会乱。练完跑步机20分钟出了汗，再拉伸，整个流程下来很舒服，下次还来。",
+    "tags": ["equipment", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0047",
+    "text": "来了几次，每次体验都一致，地面干净，器械正常，不是刚开业好后来就差的那种。这种稳定的状态说明管理用心，加上价格实惠，以后就是这边了。",
+    "tags": ["environment", "equipment"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0048",
+    "text": "女生来练完全不会不自在，氛围轻松，没有被打量的感觉，庭教练也很尊重人。器械有氧区都很齐，想减脂想塑形都能安排，这里就是我长期练的地方了。",
+    "tags": ["atmosphere", "private_training", "equipment"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0049",
+    "text": "下午人少，器械随便用，哑铃各重量都有，练胸练背练腿都能安排，不用等。练完洗澡，淋浴间干净，水温稳，出来整个人很清爽。",
+    "tags": ["equipment", "shower"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0050",
+    "text": "今天下午和男朋友一起来，两个人各练各的，场地够用不会撞。环境干净，音乐选得好，练起来状态很好，比在家锻炼强多了，下次还来。",
+    "tags": ["environment", "atmosphere"],
+    "timeSlot": "afternoon"
+  },
 
   // 晚高峰 evening
-  { "id": "c0057", "text": "下班来练，庭教练还在，看到我在练深蹲主动过来帮我看了下姿势，这种不强迫但真心帮你的感觉，真的很好。", "tags": ["private_training"], "timeSlot": "evening" },
-  { "id": "c0058", "text": "晚上来练私教，庭教练很认真，针对我的薄弱点专门设计了动作，练完很扎实，不是那种走流程的课。", "tags": ["private_training", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0059", "text": "下班后来上私教，教练专业有耐心，每个动作都讲得很详细，不懂随时问都行，从来不会让你有被敷衍的感觉。", "tags": ["private_training"], "timeSlot": "evening" },
-  { "id": "c0060", "text": "下班高峰期来，器械等待时间还好，设备够多，基本能安排到想练的部位，配置真的挺全的。", "tags": ["equipment"], "timeSlot": "evening" },
-  { "id": "c0061", "text": "晚上来练，力量器械、有氧器械都很齐全，设备新，质量好，跟大健身房的配置差不了多少，价格却亲民很多。", "tags": ["equipment", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0062", "text": "下班来练，灯光和音乐刚刚好，不会太high也不会太沉闷，换个环境动一动，整个人压力小了很多。", "tags": ["environment", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0063", "text": "晚上来练，场馆干净整洁，通风好，练完不会感觉闷，淋浴间也干净，配套很完善。", "tags": ["environment", "shower"], "timeSlot": "evening" },
-  { "id": "c0064", "text": "下班来练的氛围很好，大家都是来认真练的，不会有奇怪的眼神，新手来也不会不自在。", "tags": ["atmosphere"], "timeSlot": "evening" },
-  { "id": "c0065", "text": "晚上的健身房氛围很纯粹，没有那种互相展示的浮躁气，就是专心练，很适合想认真训练的人。", "tags": ["atmosphere"], "timeSlot": "evening" },
-  { "id": "c0066", "text": "下班来打卡，场馆在体育中心里面，停车免费，进门扫脸就行，整个流程很顺，不麻烦。", "tags": ["front_desk"], "timeSlot": "evening" },
-  { "id": "c0067", "text": "晚上练完洗澡再回家，淋浴间干净，水温热乎，洗完整个人很舒服，不用担心卫生问题。", "tags": ["shower"], "timeSlot": "evening" },
-  { "id": "c0068", "text": "下班练完冲个澡，淋浴设施干净，更衣柜够用，整体配套做得很到位，对上班族很友好。", "tags": ["shower", "front_desk"], "timeSlot": "evening" },
-  { "id": "c0069", "text": "坚持来了三个月，下班练完再回家这个习惯养成了，体能好了很多，整体状态比以前好很多。", "tags": ["training_effect"], "timeSlot": "evening" },
-  { "id": "c0070", "text": "晚上来练了腿，教练之前帮我调整过姿势，今天感觉发力点对了，酸胀感很到位，练完很满足。", "tags": ["training_effect", "private_training"], "timeSlot": "evening" },
-  { "id": "c0071", "text": "下班来练，一小时力量加半小时有氧，效率很高，这边器械配置合理，基本不用等，练完很充实。", "tags": ["training_effect", "equipment"], "timeSlot": "evening" },
-  { "id": "c0072", "text": "下班过来，工作人员很热情，有什么问题都耐心解答，不会强推课程，氛围很舒适。", "tags": ["front_desk"], "timeSlot": "evening" },
-  { "id": "c0073", "text": "上班族推荐，24小时随时来练，停车免费，扫脸进场，价格亲民，教练不强行推课，练完洗澡再回家，完美。", "tags": ["front_desk", "shower", "private_training"], "timeSlot": "evening" },
-  { "id": "c0074", "text": "老手够用，新手好上手，卫生做得到位，地面无汗渍，淋浴间干净，教练专业不强行推课，训练氛围纯粹，性价比超高！", "tags": ["equipment", "shower", "private_training", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0075", "text": "每次锻炼都能得到教练的专业指导，让我对健身更有信心，健身房设施齐全，音乐灯光都恰到好处，在这里锻炼真的是享受。", "tags": ["private_training", "equipment", "atmosphere", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0076", "text": "力量训练加有氧，每次来都练得很扎实，这边的环境和教练都很好，已经养成了规律运动的习惯。", "tags": ["training_effect", "environment", "private_training"], "timeSlot": "evening" },
-  { "id": "c0077", "text": "音乐选得不错，节奏带感但不会吵到无法专注，灯光也舒服，在这里练起来整体体验很好。", "tags": ["atmosphere", "environment"], "timeSlot": "evening" },
-  { "id": "c0078", "text": "练了两个月，之前老觉得坚持不下来，在这里反而越练越有劲，氛围好是主要原因。", "tags": ["atmosphere", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0079", "text": "女生专属建议：这边氛围轻松不压抑，没有被人打量的感觉，教练也很专业不乱来，放心练。", "tags": ["atmosphere", "private_training"], "timeSlot": "evening" },
-  { "id": "c0080", "text": "第一次晚上来，担心找不到地方，工作人员主动带我参观，介绍得很清楚，当场就办了月卡。", "tags": ["front_desk"], "timeSlot": "evening" },
+  {
+    "id": "c0051",
+    "text": "下班来练，庭教练看到我在练深蹲，过来帮我看了下姿势，纠正了几个细节，没有推课，就是帮一下就走了。这种随手帮忙的态度，在这边能常常感受到。",
+    "tags": ["private_training"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0052",
+    "text": "晚上来练私教，庭教练针对我的薄弱点设计了动作，每个要点讲得很详细，练完很扎实。不是走流程的那种，真的在帮你练好，很有水平。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0053",
+    "text": "下班后来练是我每天减压的方式，这边氛围好，大家都认真练自己的，没有互相炫耀的浮躁气。灯光音乐刚好，练完一身汗，一天的工作压力都消掉了。",
+    "tags": ["atmosphere", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0054",
+    "text": "晚上来练，器械配置很全，力量有氧都有，跟大健身房差不了多少，价格却亲民很多。高峰期来人稍微多一点，但等器械时间不长，整体还是很顺的。",
+    "tags": ["equipment"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0055",
+    "text": "晚上练完冲澡回家，淋浴间水温热乎，水压足，洗完头发不黏腻，整个人很舒服。下班来练然后洗澡回家，这个流程搭配24小时健身房真的很完美。",
+    "tags": ["shower", "front_desk"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0056",
+    "text": "坚持下班来打卡三个月，衣服小了一码，同事都问我怎么瘦的。庭教练一直帮我调整计划，根据我的进度安排，这种持续跟进让我一直保持动力。",
+    "tags": ["training_effect", "private_training"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0057",
+    "text": "下班来，体育中心这边晚上灯火通明，停车位多，免费的，扫脸进馆，工作人员热情打个招呼。从头到尾来这里的体验都很顺畅，没有摩擦点。",
+    "tags": ["front_desk", "environment"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0058",
+    "text": "今晚练了背和二头，器械都是新的，用起来手感好。庭教练帮我讲了背部的发力技巧，用了他说的方法，背宽感觉来得更明显了，很有成就感。",
+    "tags": ["equipment", "private_training", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0059",
+    "text": "下班来练，晚上的氛围我很喜欢，大家各练各的，互不打扰，偶尔有人帮你递个器械。不会有被打量的感觉，新手来也不会不自在。",
+    "tags": ["atmosphere"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0060",
+    "text": "今晚第一次来，本来只想看看，结果直接就办卡了。环境好，器械新，庭教练专业不推销，价格合理，这几个条件全满足，还要什么理由？",
+    "tags": ["environment", "equipment", "private_training", "front_desk"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0061",
+    "text": "晚上来人气最旺，但场馆不感觉拥挤，力量区和有氧区分开，各练各的不互相影响。音乐节奏好，练起来很有状态，不自觉就多练了半小时。",
+    "tags": ["environment", "atmosphere"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0062",
+    "text": "今晚和闺蜜一起来打卡，两个人各练各的，练完一起冲澡回家，整个晚上安排很充实。这边24小时，时间很自由，以后固定一起来了。",
+    "tags": ["atmosphere", "shower"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0063",
+    "text": "在这里练了几个月，庭教练你问他什么都回答，但他不会主动来找你推课。这种分寸感让人很舒服，进来就是安心练，不用担心被推销。",
+    "tags": ["private_training", "atmosphere"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0064",
+    "text": "今天下班来练，心情本来很差，练完一身汗之后压力全消了。这边音乐和氛围帮了很大忙，练完整个人状态不一样，比在家发呆强多了。",
+    "tags": ["atmosphere", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0065",
+    "text": "下班来练一小时力量加半小时有氧，器械配置合理基本不用等，整个训练很顺。练完洗澡出去回家吃饭，生活节奏很好，已经坚持三个多月了。",
+    "tags": ["equipment", "training_effect", "shower"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0066",
+    "text": "晚上来练，场地各个角落都很干净，地面没有汗渍，器械用完有人整理。这种卫生标准比很多大健身房都强，加上价格低，没有理由不选这里。",
+    "tags": ["environment", "equipment"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0067",
+    "text": "健身房设施齐全，在这里锻炼真的是享受，音乐灯光都恰到好处，让人心情愉悦。庭教练有耐心，每次都能得到专业指导，对健身越来越有信心了，五星好评！",
+    "tags": ["equipment", "atmosphere", "private_training"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0068",
+    "text": "下班后来健身已经成了习惯，在这边练特别有效果。庭教练了解我的情况，训练强度安排得刚好，练完身体累但心情好，睡眠质量也好了很多。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0069",
+    "text": "淋浴间做得很好，水温热乎稳定，空间宽敞，挂钩够用，地面防滑，没有异味。每次练完洗澡这个环节都很满意，配套真的用心在维护。",
+    "tags": ["shower"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0070",
+    "text": "上班族必推，24小时随时来练，停车免费，扫脸进场，价格实惠，教练不强推课，练完淋浴间冲澡再回家。附近上班的人真的别错过这里。",
+    "tags": ["front_desk", "shower", "private_training"],
+    "timeSlot": "evening"
+  },
 
   // 夜训 night
-  { "id": "c0081", "text": "夜班族专属时间来练，器械全是自己的，不用等，不用抢，安安静静把今天的训练完成，很爽。", "tags": ["equipment", "atmosphere"], "timeSlot": "night" },
-  { "id": "c0082", "text": "凌晨来练，器械全部可以用，一个人整个力量区随便用，这种感觉太爽了，24小时真的很值。", "tags": ["equipment"], "timeSlot": "night" },
-  { "id": "c0083", "text": "深夜来练，场馆干净整洁，灯光正常，不会因为是夜间就偷懒，整体维护很用心。", "tags": ["environment"], "timeSlot": "night" },
-  { "id": "c0084", "text": "夜训的环境很安静，就自己一两个人，音乐放着，练起来特别专注，效率超高。", "tags": ["environment", "atmosphere"], "timeSlot": "night" },
-  { "id": "c0085", "text": "深夜来练的氛围很特别，安静但不孤独，就是专心干自己的事，24小时开放对夜猫子来说真的太重要了。", "tags": ["atmosphere"], "timeSlot": "night" },
-  { "id": "c0086", "text": "熬夜族福利，深夜练完睡得更好，24小时扫脸进场，随时来随时练，自由度很高。", "tags": ["atmosphere", "front_desk"], "timeSlot": "night" },
-  { "id": "c0087", "text": "夜训氛围很纯粹，来的人都是认真练的，大家互不打扰，专注度比白天高，很享受这个状态。", "tags": ["atmosphere"], "timeSlot": "night" },
-  { "id": "c0088", "text": "夜训完冲个澡，淋浴间干净，凌晨来也一样整洁，不会因为是深夜就变差，管理很到位。", "tags": ["shower"], "timeSlot": "night" },
-  { "id": "c0089", "text": "坚持夜训一段时间，整体体态改善了很多，教练给的训练方向很对，不是瞎练，有目标有进步。", "tags": ["training_effect", "private_training"], "timeSlot": "night" },
-  { "id": "c0090", "text": "深夜练了背和二头，器械随便用，专注度很高，练完感觉很好，比白天人多的时候练得更扎实。", "tags": ["training_effect", "equipment"], "timeSlot": "night" },
-  { "id": "c0091", "text": "凌晨来练，扫脸进场很方便，安全感很好，场馆管理到位，不会有任何顾虑，放心练就行。", "tags": ["front_desk"], "timeSlot": "night" },
-  { "id": "c0092", "text": "健身房在体育中心里，停车不要钱，扫脸进场，24小时开放，对我们打工人来说真的太方便了，价格也很亲民。", "tags": ["front_desk"], "timeSlot": "night" },
-  { "id": "c0093", "text": "夜班族必推，凌晨来练完睡一觉，整个人状态好很多，24小时这个配置真的是选这里最大的理由。", "tags": ["front_desk", "training_effect"], "timeSlot": "night" },
-  { "id": "c0094", "text": "深夜来练完练完，整个力量区随便用，这种自由感是在大健身房感受不到的，24小时超值。", "tags": ["equipment", "atmosphere"], "timeSlot": "night" },
-  { "id": "c0095", "text": "庭教练白天帮我排好了训练计划，夜里照着练，完全不迷茫，效率比以前高多了。", "tags": ["private_training", "training_effect"], "timeSlot": "night" },
-  { "id": "c0096", "text": "扫脸进场安全感很强，不用带卡不怕忘，24小时随时能来，真的很适合生活不规律的人。", "tags": ["front_desk"], "timeSlot": "night" },
-  { "id": "c0097", "text": "第一次被朋友带来，现在已经变成这里的常客了，性价比这么高的健身房真的不多，附近首选。", "tags": ["atmosphere", "front_desk"], "timeSlot": "night" },
+  {
+    "id": "c0071",
+    "text": "凌晨来练，整个力量区就自己的，哑铃随便拿，深蹲架随便占，想做多少组做多少组。这种体验白天根本感受不到，24小时这个配置真的太值了。",
+    "tags": ["equipment", "atmosphere"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0072",
+    "text": "深夜来练，馆里干净整洁，灯全开着，背景音乐放着，完全没有因为是夜间就敷衍了事。一个人练了两小时，专注度极高，很享受这个状态。",
+    "tags": ["environment", "atmosphere"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0073",
+    "text": "熬夜族推荐，深夜来练完睡眠质量好很多。24小时扫脸进场，随时来随时走，自由度很高。比在家刷手机强多了，出一身汗回来睡，睡得很踏实。",
+    "tags": ["front_desk", "training_effect"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0074",
+    "text": "凌晨一个人练，就自己和背景音乐，一首歌一个动作，练了两个小时完全没感觉时间过去。这种专注状态白天人多的时候达不到，夜训对我来说效率最高。",
+    "tags": ["atmosphere", "training_effect"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0075",
+    "text": "上夜班的朋友推荐来的，换完班来练一下，出身汗洗澡，然后回家睡觉，睡眠质量比直接回家好很多。24小时扫脸进场，不用担心时间，这个配置对我们来说太好用了。",
+    "tags": ["front_desk", "shower", "training_effect"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0076",
+    "text": "深夜来练器械，全部随便用，没有等待。力量区从头练到尾，组间休息喝水看手机，完全按自己节奏来。这种自由感白天高峰期是体会不到的。",
+    "tags": ["equipment", "atmosphere"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0077",
+    "text": "夜训完洗澡，凌晨来淋浴间一样干净，热水充足，水温稳定。没有因为深夜就降标准，管理很认真。",
+    "tags": ["shower", "environment"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0078",
+    "text": "坚持夜训一段时间了，体态改善了很多，庭教练之前给我的训练方向很对，有目标有计划，进步很稳定。24小时随时能来，夜猫子福音。",
+    "tags": ["training_effect", "private_training", "front_desk"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0079",
+    "text": "凌晨来练，停车场还有很多位，扫脸进门，馆里干净灯全亮。健身房在体育中心里面，位置安全，深夜来不用担心，是真正的24小时健身房。",
+    "tags": ["front_desk", "environment"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0080",
+    "text": "生活不规律的人推荐来，24小时开放，不管几点来都能练。扫脸进场不用带卡，凌晨来器械都是自己的，效率极高，同价位找不到第二家这样的。",
+    "tags": ["front_desk", "equipment"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0081",
+    "text": "深夜练完深蹲和腿举，腿彻底练透了，坐下来休息整条腿都软了。白天总是被打断，夜里一个人练，组数强度完全按自己来，效果明显好很多。",
+    "tags": ["equipment", "training_effect", "atmosphere"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0082",
+    "text": "夜班结束后来练练，出一身汗洗个澡，再回家睡觉，睡眠质量比直接回家好很多。庭教练帮我之前写的计划照着打，有方向，不乱练，进步很稳。",
+    "tags": ["training_effect", "private_training", "shower"],
+    "timeSlot": "night"
+  },
 
-  // 早上补充
-  { "id": "c0098", "text": "早上来练背，器械够用，不用排队，教练路过看了一眼帮我调了下姿势，没收钱，这种随手帮忙的感觉很好。", "tags": ["equipment", "private_training"], "timeSlot": "morning" },
-  { "id": "c0099", "text": "今天早上六点来，整个馆就我一个人，安静得很，一首歌一个动作，练得很专注，状态超好。", "tags": ["atmosphere", "environment"], "timeSlot": "morning" },
-  { "id": "c0100", "text": "晨练打卡第30天，体重掉了四斤，体态感觉好了很多，环境好氛围好，来了就不想走。", "tags": ["training_effect", "atmosphere"], "timeSlot": "morning" },
-  { "id": "c0101", "text": "早上过来练，停车场空位很多，扫脸进去直接开练，整个流程五分钟内搞定，对懒人很友好。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0102", "text": "晨练完洗澡出门，淋浴间水热得快，头发洗完不黏腻，细节做得好，比很多健身房强。", "tags": ["shower"], "timeSlot": "morning" },
-  { "id": "c0103", "text": "今天早训做了胸推和肩，器械全，重量段也够，练起来很顺，发力感很踏实。", "tags": ["equipment", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0104", "text": "早上来练，场馆空气流通好，不会有那种闷闷的健身房气味，地面干净，整体环境很舒服。", "tags": ["environment"], "timeSlot": "morning" },
-  { "id": "c0105", "text": "第一次来健身房有点紧张，工作人员很耐心带我看了一圈，介绍完全没有推销感，很轻松就决定办卡了。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0106", "text": "早起来练一小时，整个上午状态都很好，这边的器械和环境让我每次都来得很有动力。", "tags": ["training_effect", "environment"], "timeSlot": "morning" },
-  { "id": "c0107", "text": "庭教练今天帮我重新安排了训练计划，说我之前练的方式效率低，调整后今天练完感觉对了很多。", "tags": ["private_training", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0108", "text": "早上来练，哑铃区整整齐齐的，地上没有汗渍，这种卫生习惯真的让人很放心。", "tags": ["equipment", "environment"], "timeSlot": "morning" },
-  { "id": "c0109", "text": "早训完冲澡出门，整个早上都很充实，健身房24小时都能来，时间完全自己掌控，很自由。", "tags": ["shower", "front_desk"], "timeSlot": "morning" },
-
-  // 午间补充
-  { "id": "c0110", "text": "午休来练，人少器械随便用，这个时间段来真的很舒服，不用等设备，一小时练完干净利落。", "tags": ["equipment"], "timeSlot": "noon" },
-  { "id": "c0111", "text": "今天中午来试了私教体验，庭教练把我的体态问题分析得很准，给出的训练建议很实用，没有乱报价。", "tags": ["private_training"], "timeSlot": "noon" },
-  { "id": "c0112", "text": "午休来练，场馆很干净，地面一尘不染，更衣室也整洁，卫生这块真的做得好。", "tags": ["environment", "shower"], "timeSlot": "noon" },
-  { "id": "c0113", "text": "中午来练完洗澡，水温稳定，淋浴间没有滑倒风险，配套很安全，细节做得到位。", "tags": ["shower"], "timeSlot": "noon" },
-  { "id": "c0114", "text": "中午练了45分钟有氧加力量，跑步机和器械都不用等，练完很舒服，午休时间完全够用。", "tags": ["equipment", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0115", "text": "中午来，环境很安静，练起来专注度很高，比我在家里做操效果强多了，值回票价。", "tags": ["environment", "atmosphere"], "timeSlot": "noon" },
-  { "id": "c0116", "text": "今天午休来，教练帮我看了硬拉姿势，背的发力感立刻不一样了，真的很有水平。", "tags": ["private_training", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0117", "text": "中午带同事来参观，他对这边的器械和价格都很满意，当场就一起办了月卡，附近上班族强推。", "tags": ["equipment", "front_desk"], "timeSlot": "noon" },
-  { "id": "c0118", "text": "午休健身已经坚持三个月，这边24小时开放，中午下班随时能来，对打工人太友好了。", "tags": ["front_desk", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0119", "text": "中午过来练，馆里有背景音乐，节奏感很好，不会觉得沉闷，练起来很带劲。", "tags": ["atmosphere"], "timeSlot": "noon" },
-  { "id": "c0120", "text": "中午来感受了一下，整体比想象中好很多，器械新，环境干净，教练不强推，周边找不到第二家这么性价比的。", "tags": ["equipment", "environment", "private_training"], "timeSlot": "noon" },
-
-  // 下午补充
-  { "id": "c0121", "text": "下午来练腿，深蹲架有好几个，不用等，教练看到我在练还特意过来提醒了保护带的用法，贴心。", "tags": ["equipment", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0122", "text": "今天下午第一次来，环境超出预期，灯光、音乐、空调全到位，完全不像外表看起来那么普通。", "tags": ["environment", "atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0123", "text": "下午练完体重秤一量，月减了三斤，庭教练的减脂训练计划确实有效，一点不是瞎练。", "tags": ["training_effect", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0124", "text": "下午人不多，自己慢慢练，没有任何催促感，想休息就休息，整个练习过程很舒服。", "tags": ["atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0125", "text": "下午来练完洗澡，淋浴间水压很好，头冲完很清爽，这个配套挺完善的。", "tags": ["shower"], "timeSlot": "afternoon" },
-  { "id": "c0126", "text": "今天下午和闺蜜一起来，两个人一起练氛围超好，这边的场地很宽敞，不会互相打扰。", "tags": ["atmosphere", "environment"], "timeSlot": "afternoon" },
-  { "id": "c0127", "text": "下午来做了拉伸和力量，器械区和有氧区分布合理，动线清晰，不会找不到器材。", "tags": ["equipment", "environment"], "timeSlot": "afternoon" },
-  { "id": "c0128", "text": "下午来体验，工作人员介绍得很详细，价格透明，没有隐形消费，这点很重要。", "tags": ["front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0129", "text": "健身新手推荐来这里，教练会主动帮你纠正动作，避免受伤，这比很多大健身房的服务都好。", "tags": ["private_training"], "timeSlot": "afternoon" },
-  { "id": "c0130", "text": "下午来，整个馆环境很清爽，不像一些地方练到一半感觉空气不好，这边通风很棒。", "tags": ["environment"], "timeSlot": "afternoon" },
-  { "id": "c0131", "text": "下午练了两小时，器械全部都用上了，练完非常充实，性价比真的高，月卡很值。", "tags": ["equipment", "training_effect"], "timeSlot": "afternoon" },
-  { "id": "c0132", "text": "今天下午庭教练帮我测了体脂，根据数据给了训练和饮食建议，这种专业度真的值钱。", "tags": ["private_training"], "timeSlot": "afternoon" },
-  { "id": "c0133", "text": "下午来练，停车场直接开进去，不用绕路，进馆扫脸，便利程度比很多同类健身房高。", "tags": ["front_desk"], "timeSlot": "afternoon" },
-
-  // 晚高峰补充
-  { "id": "c0134", "text": "下班来练，今天人稍微多了点，但等器械时间不长，整体节奏还是很顺的。", "tags": ["equipment"], "timeSlot": "evening" },
-  { "id": "c0135", "text": "晚上来练，庭教练在旁边看了一会儿，主动过来说我肩膀姿势有问题，帮我调整了，完全不收费，太良心了。", "tags": ["private_training"], "timeSlot": "evening" },
-  { "id": "c0136", "text": "下班后来练是我每天最放松的时候，这边氛围不浮躁，大家都认真练，很治愈。", "tags": ["atmosphere"], "timeSlot": "evening" },
-  { "id": "c0137", "text": "晚上练完冲澡，水温热乎，淋浴间卫生放心，洗完整个人很舒服，回家直接睡。", "tags": ["shower"], "timeSlot": "evening" },
-  { "id": "c0138", "text": "下班来练，场馆灯光很好，不会那种昏黄昏黄的，整体很干净明亮，心情自然就好了。", "tags": ["environment"], "timeSlot": "evening" },
-  { "id": "c0139", "text": "晚上带男朋友一起来练，两个人各练各的也不会无聊，氛围好，环境好，下次还来。", "tags": ["atmosphere", "environment"], "timeSlot": "evening" },
-  { "id": "c0140", "text": "下班来练，器械真的配得很全，有氧区也够用，从力量到有氧整套下来完全没问题。", "tags": ["equipment"], "timeSlot": "evening" },
-  { "id": "c0141", "text": "晚上来练了胸和三头，感觉这次动作比之前标准很多，是庭教练之前帮我纠了姿势的功劳。", "tags": ["training_effect", "private_training"], "timeSlot": "evening" },
-  { "id": "c0142", "text": "下班来练，体育中心这边晚上灯火通明，停车方便，进去扫脸，很有安全感。", "tags": ["front_desk", "environment"], "timeSlot": "evening" },
-  { "id": "c0143", "text": "晚上人气最旺，但场馆不会感觉拥挤，空间利用挺合理的，练起来不会互相影响。", "tags": ["environment", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0144", "text": "下班来坚持打卡三个月，衣服小了一码，同事都问我怎么瘦的，全靠这里的训练和教练的计划。", "tags": ["training_effect", "private_training"], "timeSlot": "evening" },
-  { "id": "c0145", "text": "晚上来是我的固定节奏，练完洗澡回家吃饭，这个流程搭配24小时健身房真的太完美了。", "tags": ["shower", "front_desk"], "timeSlot": "evening" },
-  { "id": "c0146", "text": "今晚来练了二头和背，器械全部都是新的，用起来手感很好，配置比外表看起来要高。", "tags": ["equipment"], "timeSlot": "evening" },
-  { "id": "c0147", "text": "下班来，工作人员笑着打了个招呼，氛围很轻松，练完也很开心，这种细节让人很舒服。", "tags": ["front_desk", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0148", "text": "晚上来练，音乐playlist选得好，节奏感强但不烦躁，跟着音乐节奏练很有状态。", "tags": ["atmosphere"], "timeSlot": "evening" },
-  { "id": "c0149", "text": "下班后第一次来，本来只想看看，结果当天就办卡了。环境好，教练好，价格合理，没理由不办。", "tags": ["environment", "private_training", "front_desk"], "timeSlot": "evening" },
-
-  // 夜训补充
-  { "id": "c0150", "text": "夜猫子推荐，深夜来练完睡眠质量好很多，这边24小时随时来，比在家刷手机强多了。", "tags": ["training_effect", "front_desk"], "timeSlot": "night" },
-  { "id": "c0151", "text": "凌晨一个人练，整个力量区就自己用，哑铃随便拿，深蹲架随便占，这种体验花钱买不到。", "tags": ["equipment", "atmosphere"], "timeSlot": "night" },
-  { "id": "c0152", "text": "夜训完洗澡，凌晨的淋浴间也一样干净，热水到位，细节管理很到位。", "tags": ["shower", "environment"], "timeSlot": "night" },
-  { "id": "c0153", "text": "深夜来练，整个馆灯都是亮的，不会有那种鬼地方的感觉，很安心，管理很正规。", "tags": ["environment", "front_desk"], "timeSlot": "night" },
-  { "id": "c0154", "text": "上夜班的朋友推荐来，24小时扫脸进，不用担心时间问题，随时能来随时能走，超自由。", "tags": ["front_desk"], "timeSlot": "night" },
-  { "id": "c0155", "text": "凌晨来练完，整个人很放松，睡眠变好了，体力也好了，夜班族坚持练真的有改变。", "tags": ["training_effect", "atmosphere"], "timeSlot": "night" },
-  { "id": "c0156", "text": "夜里来练器械，全是自己的，一个动作做完直接换下一个，不用等，效率极高。", "tags": ["equipment", "training_effect"], "timeSlot": "night" },
-  { "id": "c0157", "text": "深夜来，停车场还有很多位，扫脸进门，馆里干净整洁，24小时都维护得这么好，很用心。", "tags": ["front_desk", "environment"], "timeSlot": "night" },
-  { "id": "c0158", "text": "凌晨练完，自己一个人在馆里，音乐开着，练了两小时，整体感受极好，下次还来深夜。", "tags": ["atmosphere", "training_effect"], "timeSlot": "night" },
-  { "id": "c0159", "text": "夜班结束过来练练，出了一身汗洗个澡，再回家睡觉，这套流程坚持下来感觉整个人状态好很多。", "tags": ["shower", "training_effect"], "timeSlot": "night" },
-  { "id": "c0160", "text": "凌晨来练，庭教练之前帮我写的计划照着打，有方向感，不会随便乱练，进步很踏实。", "tags": ["private_training", "training_effect"], "timeSlot": "night" },
-
-  // 跨时段通用
-  { "id": "c0161", "text": "💪器械全、环境干净、教练专业、不强推课，四个字：值得推荐！", "tags": ["equipment", "environment", "private_training"], "timeSlot": "evening" },
-  { "id": "c0162", "text": "环境：非常干净整洁\n设施：该有的都有\n教练：专业有耐心\n性价比：超高\n总结：附近健身首选，闭眼冲。", "tags": ["environment", "equipment", "private_training"], "timeSlot": "afternoon" },
-  { "id": "c0163", "text": "来这边最大的感受就是：教练不烦你，但你需要的时候他一定在。这种分寸感真的难得。", "tags": ["private_training", "atmosphere"], "timeSlot": "morning" },
-  { "id": "c0164", "text": "以前怕进健身房被推销，在这里完全没这个问题，工作人员很专业，不会让你有压力。", "tags": ["front_desk", "atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0165", "text": "24小时扫脸进，免费停车，价格实惠，教练专业，这几个加在一起在惠州真的找不到第二家。", "tags": ["front_desk", "private_training"], "timeSlot": "evening" },
-  { "id": "c0166", "text": "减脂打卡第45天，体重降了6斤，体脂肉眼可见在下降，坚持训练真的有效，这边氛围帮了很大忙。", "tags": ["training_effect", "atmosphere"], "timeSlot": "morning" },
-  { "id": "c0167", "text": "从来没想过健身可以这么轻松愉快，教练不催不压，环境舒服，时间自由，真的很适合我。", "tags": ["private_training", "atmosphere", "environment"], "timeSlot": "afternoon" },
-  { "id": "c0168", "text": "健身小白入坑两个月，庭教练手把手教，现在基础动作都规范了，受伤风险小很多，很感谢。", "tags": ["private_training", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0169", "text": "这边是我练过最干净的健身房，每次来地板都擦得亮，器械擦得干净，强迫症友好。", "tags": ["environment"], "timeSlot": "morning" },
-  { "id": "c0170", "text": "洗澡这块做得真好，水温稳定不忽冷忽热，淋浴间有挂钩有换衣空间，细节到位。", "tags": ["shower"], "timeSlot": "evening" },
-  { "id": "c0171", "text": "在体育中心这边练了大半年，从来没有被强推过课程，教练专业且尊重人，这点很难得。", "tags": ["private_training", "atmosphere"], "timeSlot": "evening" },
-  { "id": "c0172", "text": "跑步机、椭圆机、动感单车都有，有氧区设备够用，每次练完出一身汗，感觉很好。", "tags": ["equipment", "training_effect"], "timeSlot": "afternoon" },
-  { "id": "c0173", "text": "第一次来健身就选这里真的选对了，教练教的基础动作很扎实，比在网上看视频自学强多了。", "tags": ["private_training", "training_effect"], "timeSlot": "noon" },
-  { "id": "c0174", "text": "上班族的理想健身房：24小时、免费停车、价格实惠、教练不推销、环境干净，全对了。", "tags": ["front_desk", "environment"], "timeSlot": "evening" },
-  { "id": "c0175", "text": "练完洗澡出门，整个人神清气爽，淋浴间卫生真的很好，这边配套设施很完善。", "tags": ["shower", "training_effect"], "timeSlot": "morning" },
-  { "id": "c0176", "text": "力量区非常齐全，从新手到进阶都有对应的设备，哑铃、杠铃、各类固定器械一应俱全。", "tags": ["equipment"], "timeSlot": "afternoon" },
-  { "id": "c0177", "text": "庭教练给我看了体态问题，圆肩驼背，专门给我加了矫正训练，现在站姿好看多了。", "tags": ["private_training", "training_effect"], "timeSlot": "afternoon" },
-  { "id": "c0178", "text": "这边的健身氛围很正向，大家都认真练，互相帮忙帮忙递个器械很正常，很有团队感。", "tags": ["atmosphere"], "timeSlot": "evening" },
-  { "id": "c0179", "text": "停车免费这一点真的加分，附近停车挺贵的，这边直接省了，每次来心情都好一点。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0180", "text": "新手强烈推荐来这里，教练会帮你建立正确的训练习惯，省了走很多弯路，性价比超高。", "tags": ["private_training"], "timeSlot": "noon" },
-  { "id": "c0181", "text": "练了一段时间明显感觉肌肉量上来了，力量也在进步，这边的训练环境和指导功不可没。", "tags": ["training_effect", "private_training"], "timeSlot": "evening" },
-  { "id": "c0182", "text": "这边的更衣室和淋浴区比很多大健身房还干净，每次来都是整洁的状态，不用担心卫生。", "tags": ["shower"], "timeSlot": "noon" },
-  { "id": "c0183", "text": "教练专业程度高，我问了很多关于增肌的问题，每个都给出了详细的回答，没有任何不耐烦。", "tags": ["private_training"], "timeSlot": "afternoon" },
-  { "id": "c0184", "text": "进来参观一圈，空间利用得很合理，有氧区和力量区分开，互不干扰，动线很清晰。", "tags": ["environment", "equipment"], "timeSlot": "morning" },
-  { "id": "c0185", "text": "价格真的亲民，月卡性价比超高，比我之前去的两家都划算，关键是服务和环境还更好。", "tags": ["front_desk", "environment"], "timeSlot": "noon" },
-  { "id": "c0186", "text": "在这里练健身感觉很自在，没有被盯着看的感觉，不管是新手还是老手都能找到属于自己的节奏。", "tags": ["atmosphere"], "timeSlot": "afternoon" },
-  { "id": "c0187", "text": "体育中心旁边地标很好找，第一次来也不会迷路，停车进场都很顺畅，体验感很好。", "tags": ["front_desk"], "timeSlot": "morning" },
-  { "id": "c0188", "text": "每次来练，设备都在正常使用状态，没有坏掉的器械，管理和维护很到位，用起来很放心。", "tags": ["equipment", "environment"], "timeSlot": "evening" },
-  { "id": "c0189", "text": "这边训练氛围很积极，看到别人认真练，自己也会更有动力，坚持打卡一点不难。", "tags": ["atmosphere", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0190", "text": "来了三次，每次体验都一致，说明管理很稳定，不是刚开业好后来就差，这点很加分。", "tags": ["environment", "front_desk"], "timeSlot": "afternoon" },
-  { "id": "c0191", "text": "洗完澡走出来整个人神清气爽，水温合适、淋浴间宽敞、地面干净，这些加在一起体验很好。", "tags": ["shower"], "timeSlot": "evening" },
-  { "id": "c0192", "text": "24小时健身房对我来说真的是刚需，生活作息不规律，能随时来练是最重要的，这边完全满足。", "tags": ["front_desk"], "timeSlot": "night" },
-  { "id": "c0193", "text": "现在每天练完感觉精力充沛，睡眠质量也好了，整体身体状态变化很明显，很庆幸来了这里。", "tags": ["training_effect"], "timeSlot": "morning" },
-  { "id": "c0194", "text": "教练帮我规划了减脂期的饮食和训练搭配，比光靠自己瞎吃瞎练高效多了，一个月感觉明显。", "tags": ["private_training", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0195", "text": "器械全，价格低，24小时，教练好，离家近，五个条件全满足，还要什么自行车。", "tags": ["equipment", "private_training", "front_desk"], "timeSlot": "night" },
-  { "id": "c0196", "text": "真的没想到这边环境这么好，第一次来的时候被惊到了，每个区域都很整洁，器械也是新的。", "tags": ["environment", "equipment"], "timeSlot": "morning" },
-  { "id": "c0197", "text": "每次练完出一身汗，洗个澡再出去，这种感觉太爽了，淋浴间干净卫生，每次来都很放心。", "tags": ["shower", "training_effect"], "timeSlot": "evening" },
-  { "id": "c0198", "text": "夜训完感觉一天的压力都释放了，这边的氛围和环境是真的能帮你放松，不只是出汗那么简单。", "tags": ["atmosphere", "training_effect"], "timeSlot": "night" },
-  { "id": "c0199", "text": "推荐给所有在附近上班的人，午休来练，下班来练，任何时间都可以，价格也不贵。", "tags": ["front_desk"], "timeSlot": "noon" },
-  { "id": "c0200", "text": "在这边练了半年，从不会健身到现在有自己的训练节奏，庭教练从头带我，真的很有收获。", "tags": ["private_training", "training_effect"], "timeSlot": "morning" }
+  // 综合
+  {
+    "id": "c0083",
+    "text": "今日打卡顶尖健身，真心超出预期。器械配置很全，质量很好，发力感棒，力量有氧都能满足。场地整洁干净，氛围轻松不压抑，庭教练热情贴心，不强行推课，值得推荐。",
+    "tags": ["equipment", "environment", "atmosphere", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0084",
+    "text": "在体育中心旁边，位置好找，停车免费，进来发现配置超出预期，器械是新的，环境干净，庭教练友好，价格又实惠，真的值得推荐。",
+    "tags": ["front_desk", "equipment", "environment", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0085",
+    "text": "私教很专业也很有耐心，一点一点细心教，给庭教练点赞，从动作到饮食都帮我规划好了，健身这件事终于走上正轨了。兄弟们闭着眼来，不会后悔的。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0086",
+    "text": "来这边最大的感受就是进来就是练，没有推销没有压力，庭教练专业但不烦你，氛围很纯粹。器械全、价格低、24小时，三个条件全满足。",
+    "tags": ["atmosphere", "equipment", "private_training", "front_desk"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0087",
+    "text": "环境非常漂亮，设备很齐全该有的都有。价格非常优惠，对我们上班族来说很重要，最主要是24小时开放，随时都可以来。服务也很不错，工作人员热情。",
+    "tags": ["environment", "equipment", "front_desk"],
+    "timeSlot": "noon"
+  },
+  {
+    "id": "c0088",
+    "text": "跟朋友来的，起初以为价格低就是配置差，进来之后被惊到了。器械是新的，地面干净，淋浴间整洁，庭教练专业不推销。这个价格这个体验，在这边真的不多见。",
+    "tags": ["equipment", "environment", "shower", "private_training"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0089",
+    "text": "练了两个月，从不会健身到现在每周三次，养成了规律运动的习惯。庭教练帮我打好了基础，动作规范之后进步快，体态改善很明显。很庆幸选了这里开始。",
+    "tags": ["training_effect", "private_training", "atmosphere"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0090",
+    "text": "每次来练完感觉整个人都充电满了，精力好，睡眠质量高，状态比没运动时强很多。器械、环境、教练三个都到位，练得开心，以后不想去别的地方了。",
+    "tags": ["training_effect", "equipment", "environment", "private_training"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0091",
+    "text": "来体验过的人都说好，不是说说而已，是真实体验出来的。器械配置高，环境干净，教练认真，价格亲民，停车免费，24小时开放，每一条都是实在的优点。",
+    "tags": ["equipment", "environment", "private_training", "front_desk"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0092",
+    "text": "这边是真正的24小时健身房，凌晨来过，一样干净，一样有背景音乐，一样可以扫脸进。说到做到，不是写着24小时但某些时段敷衍的那种。",
+    "tags": ["front_desk", "environment"],
+    "timeSlot": "night"
+  },
+  {
+    "id": "c0093",
+    "text": "今天来顶尖健身打卡，力量区器械齐全，重量段完整，新手老手都能找到适合自己的。淋浴间干净，水温稳定，练完冲澡出来整个人神清气爽，这一趟很值。",
+    "tags": ["equipment", "shower", "training_effect"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0094",
+    "text": "第一次来有点担心会被推销，进来发现完全没有，工作人员就正常介绍，庭教练你问他才说。这种松弛感让我很快就决定长期来这边了。",
+    "tags": ["front_desk", "private_training", "atmosphere"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0095",
+    "text": "在这里健身感觉很纯粹，就是来练的，没有其他杂质。庭教练专业，环境干净，器械够用，氛围好，来了就不想去别的地方了。",
+    "tags": ["atmosphere", "private_training", "environment", "equipment"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0096",
+    "text": "减脂期在这边练了两个月，效果很明显，体重降了八斤，体脂率也下来了，肌肉没有掉。庭教练的计划很科学，饮食和训练搭配好了，进步比自己练快多了。",
+    "tags": ["private_training", "training_effect"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0097",
+    "text": "今天来顶尖健身打卡，停车免费，扫脸进门，庭教练帮我看了动作，环境干净，练完洗澡出来状态极好。每个细节都到位，价格又亲民，目前体验过最好的健身房。",
+    "tags": ["front_desk", "environment", "private_training", "shower"],
+    "timeSlot": "morning"
+  },
+  {
+    "id": "c0098",
+    "text": "最近开始规律运动，在这边练了一个多月，体重没变但围度小了，朋友说我看起来瘦了，脸也小了。庭教练说是体脂在降肌肉在涨，这个变化让我很有动力继续。",
+    "tags": ["training_effect", "private_training"],
+    "timeSlot": "evening"
+  },
+  {
+    "id": "c0099",
+    "text": "从来没想过健身可以这么轻松，不催不压，时间自己掌控，教练不烦你，环境舒服，价格低。来了两个月，从不想动到每周都期待来练，这个改变我自己都很惊讶。",
+    "tags": ["atmosphere", "private_training", "environment"],
+    "timeSlot": "afternoon"
+  },
+  {
+    "id": "c0100",
+    "text": "性价比超高，价格实惠，器械新，环境干净，庭教练专业，停车免费，24小时开放。这几个条件放在一起，附近真的找不到第二家，来过就不想去别的地方了，强力推荐！",
+    "tags": ["equipment", "environment", "private_training", "front_desk"],
+    "timeSlot": "noon"
+  }
 ];
