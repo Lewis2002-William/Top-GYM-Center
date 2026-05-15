@@ -11,6 +11,16 @@ const tagDefinitions = [
 ];
 const tagLabels = Object.fromEntries(tagDefinitions.map((tag) => [tag.id, tag.label]));
 const copiedStorageKey = "comment-center-copied-v1";
+const deviceSeedKey = "comment-center-device-seed";
+
+function getDeviceSeed() {
+  let seed = localStorage.getItem(deviceSeedKey);
+  if (!seed) {
+    seed = Math.random().toString(36).slice(2);
+    localStorage.setItem(deviceSeedKey, seed);
+  }
+  return seed;
+}
 let activeTags = new Set();
 let shuffleOffset = 0;
 
@@ -133,7 +143,7 @@ function renderComments() {
     filtered = timeMatched;
   }
 
-  const seed = `${bucket}:${currentSlot}:${selectedTags.join(",")}:${shuffleOffset}`;
+  const seed = `${bucket}:${currentSlot}:${selectedTags.join(",")}:${shuffleOffset}:${getDeviceSeed()}`;
   const selected = seededShuffle(filtered, seed).slice(0, perView);
   const nextRefresh = new Date((bucket + 1) * rotationHours * 60 * 60 * 1000);
 
